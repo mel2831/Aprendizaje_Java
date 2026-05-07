@@ -1,5 +1,9 @@
 import java.util.Scanner;
 public class Agente
+
+
+public class CasoDetective {
+public class Agente
 {
     protected int id;
     protected String nombre;
@@ -16,6 +20,10 @@ public class Agente
         this.nombre= nombre;
         this.agencia= agencia;
         this.rango=rango;
+        this.experiencia=experiencia;
+        this.cargo= cargo;
+        this.comisaria=comisaria;
+        this.telefono=telefono;
     }
 
     public void reportar(int id, String nombre, String agencia, String rango)
@@ -47,10 +55,8 @@ public class Agente
         telefono= teclado.nextInt();
     
     }
-
-   
-
 }
+
 class policia extends Agente
 {
     System.out.println("Investiga");
@@ -63,6 +69,7 @@ class policia extends Agente
     System.out.println("Pregunta");
 
 }
+
 class Forense extends Agente
 {
     System.out.println("Investiga");
@@ -74,8 +81,6 @@ class Forense extends Agente
     System.out.println("Interroga");
     System.out.println("Recoge el cuerpo");
 }
-
-public class CasoDetective {
 
     public static void main(String[] args) {
 
